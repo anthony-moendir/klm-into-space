@@ -28,14 +28,18 @@
         var returnDateElem =  document.getElementById('range-date-picker');
         var oneWayDateElem =  document.getElementById('range-date-picker-single');
 
-        if (tripType === "one-way") {
+          if (tripType === "one-way") {
             returnDateElem.style.display = 'none';
             oneWayDateElem.style.display = 'flex';
         } else {
           returnDateElem.style.display = 'flex';
           oneWayDateElem.style.display = 'none';
         }
+
+        
       }
+      
+      setTimeout(function(){ handleTripChange(false)  }, 600);
     </script>
   
     
@@ -260,7 +264,7 @@
       }
       
       #range-date-picker-single {
-        display: none;
+        /* display: none; */
       }
 
       
@@ -507,7 +511,7 @@
                   endDate: event.end
               })"
             format="DD-MM-YYYY"
-            open-after-select
+            close-after-select
             start-input-selector="#departure-date"
             end-input-selector="#return-date"
             class="example-picker space-between">
@@ -532,7 +536,7 @@
             on="select:AMP.setState({date1: event.date, dateType1: event.id})"
 
             format="DD-MM-YYYY"
-            open-after-select
+            close-after-select
             input-selector="#departure-date-single"
             class="example-picker space-between">
             <div class="col">
