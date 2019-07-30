@@ -10,13 +10,13 @@
 
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <link rel="canonical" href=".">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     <script type="text/javascript">
     document.cookie = "AMP_EXP=amp-autocomplete";
     </script>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    
 
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
@@ -40,6 +40,23 @@
       }
       
       setTimeout(function(){ handleTripChange(false)  }, 600);
+      
+      function navigateBack2Space() {
+        document.body.classList.remove('amsterdam');
+      }
+      
+      function navigate2Amsterdam() {
+        var searchForm = document.querySelector('form');
+        
+        if (searchForm.checkValidity()) {
+          document.body.classList.add('amsterdam');
+        }
+        else {
+          document.querySelector('form').reportValidity(); 
+        }
+        
+      }
+      
     </script>
   
     
@@ -57,35 +74,69 @@
     html{color:rgba(0,0,0,.87)}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}.hidden{display:none}@media print{*,*:before,*:after{background:transparent;color:#000;box-shadow:none}tr{page-break-inside:avoid}p{orphans:3;widows:3}}.mdl-button{-webkit-tap-highlight-color:transparent;-webkit-tap-highlight-color:rgba(255,255,255,0)}html{width:100%;height:100%;-ms-touch-action:manipulation;touch-action:manipulation}body{width:100%;min-height:100%}html,body{font-family:"Helvetica","Arial",sans-serif;font-size:14px;font-weight:400;line-height:20px}h5,h6,p{padding:0}h5{font-size:20px;font-weight:500;line-height:1;letter-spacing:.02em}h5,h6{font-family:"Roboto","Helvetica","Arial",sans-serif;margin:24px 0 16px}h6{font-size:16px;letter-spacing:.04em}h6,p{font-weight:400;line-height:24px}p{font-size:14px;letter-spacing:0;margin:0 0 16px}.mdl-color-text--red{color:#f44336 }.mdl-color-text--blue{color:#2196f3 }.mdl-color-text--grey{color:#9e9e9e }.mdl-color--black{background-color:#000 }.mdl-color-text--white{color:#fff }.mdl-button{background:0 0;border:none;border-radius:2px;color:#000;position:relative;height:36px;margin:0;min-width:64px;padding:0 16px;display:inline-block;font-family:"Roboto","Helvetica","Arial",sans-serif;font-size:14px;font-weight:500;text-transform:uppercase;letter-spacing:0;overflow:hidden;will-change:box-shadow;transition:box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);outline:none;cursor:pointer;text-decoration:none;text-align:center;line-height:36px;vertical-align:middle}.mdl-button::-moz-focus-inner{border:0}.mdl-button:hover{background-color:rgba(158,158,158,.2)}.mdl-button:focus:not(:active){background-color:rgba(0,0,0,.12)}.mdl-button:active{background-color:rgba(158,158,158,.4)}.mdl-button.mdl-button--colored:focus:not(:active){background-color:rgba(0,0,0,.12)}.mdl-button--raised{background:rgba(158,158,158,.2);box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)}.mdl-button--raised:active{box-shadow:0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);background-color:rgba(158,158,158,.4)}.mdl-button--raised:focus:not(:active){box-shadow:0 0 8px rgba(0,0,0,.18),0 8px 16px rgba(0,0,0,.36);background-color:rgba(158,158,158,.4)}.mdl-button--raised.mdl-button--colored:focus:not(:active){background-color:rgb(63,81,181)}.mdl-button--fab:focus:not(:active){box-shadow:0 0 8px rgba(0,0,0,.18),0 8px 16px rgba(0,0,0,.36);background-color:rgba(158,158,158,.4)}.mdl-button--fab.mdl-button--colored:focus:not(:active){background-color:rgb(255,64,129)}.mdl-button--accent.mdl-button--accent{color:rgb(255,64,129)}.mdl-button--accent.mdl-button--accent.mdl-button--raised{color:rgb(255,255,255);background-color:rgb(255,64,129)}.mdl-button[disabled][disabled]{color:rgba(0,0,0,.26);cursor:default;background-color:transparent}.mdl-button--raised[disabled][disabled]{background-color:rgba(0,0,0,.12);color:rgba(0,0,0,.26);box-shadow:none}@supports (-webkit-appearance:none){}@supports (pointer-events:auto){}.mdl-slider.is-upgraded:focus:not(:active)::-webkit-slider-thumb{box-shadow:0 0 0 10px rgba(63,81,181,.26)}.mdl-slider.is-upgraded:focus:not(:active)::-moz-range-thumb{box-shadow:0 0 0 10px rgba(63,81,181,.26)}.mdl-slider.is-upgraded:focus:not(:active)::-ms-thumb{background:radial-gradient(circle closest-side,rgb(63,81,181)0%,rgb(63,81,181)37.5%,rgba(63,81,181,.26)37.5%,rgba(63,81,181,.26)100%);transform:scale(1)}.mdl-slider.is-upgraded.is-lowest-value:focus:not(:active)::-webkit-slider-thumb{box-shadow:0 0 0 10px rgba(0,0,0,.12);background:rgba(0,0,0,.12)}.mdl-slider.is-upgraded.is-lowest-value:focus:not(:active)::-moz-range-thumb{box-shadow:0 0 0 10px rgba(0,0,0,.12);background:rgba(0,0,0,.12)}.mdl-slider.is-upgraded.is-lowest-value:focus:not(:active)::-ms-thumb{background:radial-gradient(circle closest-side,rgba(0,0,0,.12)0%,rgba(0,0,0,.12)25%,rgba(0,0,0,.26)25%,rgba(0,0,0,.26)37.5%,rgba(0,0,0,.12)37.5%,rgba(0,0,0,.12)100%);transform:scale(1)}body{margin:0}
 
     /* custom css */
-/*       @import url("https://fonts.googleapis.com/css?family=Open+Sans");@font-face {
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");@font-face {
     font-family: NoaLight;
     font-style: normal;
     font-weight: normal;
-    src: url("https://wwws.klm.nl/assets/components/12.2.0/kl/fonts/NoaLTW04-light.woff") format("woff")
+    src: url("https://core.static-afkl.com/ams/frontend/font/KLMNoa-Light.otf") format("woff")
 }
 
 @font-face {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
-    src: url("https://wwws.klm.nl/assets/components/12.2.0/kl/fonts/Roboto-Regular.woff") format("woff")
-} */
+    src: url("https://core.static-afkl.com/ams/frontend/font/SF-UI-Text-Regular.woff") format("woff")
+}
       body {
         background: url("https://cdn.glitch.com/35b836da-8f90-4e13-9292-beddd183f90c%2Fbg.jpg?v=1563955232870") no-repeat top center;
         background-size: cover;
       }
       
-    #header {
-      height: 40px;
-      padding: 6px 16px;
-      margin: 0;
-      text-align: left;
-      box-shadow: 0 4px 4px 0 rgba(255, 255, 255,0.35);
-      background-color: #fff;
+    .header {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
       position: fixed;
       width: 100%;
       z-index: 1;
     }
+      .header .logo-header{
+        background-color: #fff;
+        padding: 6px 16px;
+        margin: 0;
+        text-align: left;
+      }
+      .header .subheader {
+        background-color: #00a1de;
+        padding: 16px 24px;
+        display: none;
+      }
+      .amsterdam .header .subheader {
+        display: flex;
+      }
+      .header .subheader .back-button {
+        width: 100px;
+        padding-left: 28px;
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Roboto', 'san-serif';
+        font-size: 14px;
+        font-weight: normal;
+        background: url('https://cdn.glitch.com/35b836da-8f90-4e13-9292-beddd183f90c%2Farrow-left.svg?v=1564441556434') no-repeat left center;
+        cursor: pointer;
+
+      }
+      .header .subheader .title {
+        font-family: 'NoaLight';
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.1;
+        color: #ffffff;
+        text-align: center;
+        flex-grow: 1;
+      }
+      .header .subheader .action-buttons {
+        width: 100px;
+      }
 
       .menu {
       float: left;
@@ -267,7 +318,67 @@
         /* display: none; */
       }
 
+      #amsterdam-page-content {
+      padding: 64px 16px;
+      overflow: hidden;
+      display:none;
+      background: url("https://cdn.glitch.com/35b836da-8f90-4e13-9292-beddd183f90c%2Famsterdam-bg.jpg?v=1564011245344") no-repeat top center;
+      background-size: 100% auto;
+      max-width: 1280px;
+      margin: 0 auto;
+  }
+      .amsterdam #amsterdam-page-content {
+        display: block;
+      }
       
+        .ams-content-container {
+          max-width: 808px;
+          margin: 478px auto 0;
+  }
+      .ams-content-container h3 {
+        color: #00a1de;
+        font-family: "NoaLight", 'san-serif';
+        font-size: 26px;
+        margin: 16px 0 0;
+        line-height: 30px;
+        font-weight: normal;
+      }
+      .head-row {
+        font-family: "NoaLight", 'san-serif';
+        padding: 16px;
+        background-color: rgba(0,49,69,0.6);
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 36px;
+        font-weight: normal;
+        line-height: 38px;
+      }
+      .head-row h2 {
+        margin: 0;
+        flex-grow: 1;
+        font-size: 36px;
+        font-weight: normal;
+        line-height: 38px;
+      }
+      .ams-content {
+        padding: 16px;
+        background: #fff;
+        border-radius: 0 8px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      }
+      
+  #home-page-content {
+    padding: 64px 16px;
+    overflow: hidden;
+    display: block;
+    background: url("https://cdn.glitch.com/35b836da-8f90-4e13-9292-beddd183f90c%2Fbg.jpg?v=1563955232870") no-repeat top center;
+    background-size: cover;
+  }
+      .amsterdam #home-page-content {
+        display: none;
+      }
+
   .main-content {
     padding: 64px 16px;
     overflow: hidden;
@@ -386,6 +497,27 @@
         align-items: center;
         
       }
+      .hotspots .col  {
+        display: block;
+        justify-content: space-between;
+      }
+      
+      .hotspots .card {
+        padding: 0;
+        border-radius: 3px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.14);
+        background-color: #ffffff;
+      }
+      
+      .hotspots .col .caption {
+        display: block;
+        font-family: 'Roboto', 'san-serif';
+        color: #003145;
+        text-align: left;
+        font-size: 14px;
+        padding: 8px 16px;
+        font-weight: bold;
+      }
       
       
 @media screen and (min-width: 600px) {
@@ -434,13 +566,22 @@
   
     
     <!-- AMP State -->
-    <header id="header">
+    <header class="header">
+    <div class="logo-header">
       <amp-img src="https://wwws.klm.nl/assets/components/13.0.0/kl/img/kl-skyteam-logo.svg"
-    width="320" height="40">
-    </amp-img>
-  </header>  
+  width="320" height="40"></amp-img>
+    </div>
+    <div class="subheader">
+      <span class="back-button" onclick="navigateBack2Space()">Back</span>
+      <span class="title">Book your trip</span>
+      <span class="action-buttons"></span>
+    
+    </div>
+    
+  
+</header>
 
-    <div class="main-content">
+<div id="home-page-content">
     
     <div class="search-box">
       <div class="welcome-text">
@@ -583,7 +724,7 @@
         <div class="col">
         </div>
         <div class="col align-right">
-          <button type="button" class="bwc-button mdl-button mdl-button--raised">
+          <button type="button" class="bwc-button mdl-button mdl-button--raised" onclick="navigate2Amsterdam()">
             <span>Search Space Trips</span>
           </button>
         </div>
@@ -608,6 +749,70 @@
       </div>
       </div>
     </div>
+
+    <div id="amsterdam-page-content">
+  <div class="ams-content-container">
+    <div class="head-row">
+      <h2>
+        Amsterdam        
+      </h2>
+      <div class="ams-price">
+        BTC 9.99
+      </div>
+    </div>
+    <div class="ams-content">
+    <h3>
+      Discover a cultural giant
+      </h3>
+      <p>
+        Discover the cultural riches of this charming world city. Book flights to Amsterdam and visit the Anne Frank House or Van Gogh Museum before strolling through the Vondelpark. Walking, biking or boating, cultural treats await you on every corner. The centuries-old canal houses, the Dam Palace and the Rijksmuseum breathe history, while the new EYE museum displays Amsterdam’s ultramodern side.
+      </p>
+      <h3>
+        Cultural treasures in and around Amsterdam
+      </h3>
+      <p>
+        Did you know that Amsterdam's canals are a UNESCO World Heritage Site? Go shopping through the quirky ‘9 streets’ or discover the city from the water on a touring boat. There is also much to do just outside of Amsterdam: For a true taste of Holland, visit the nearby village of Zaanse Schans and the Keukenhof. All this and more makes Amsterdam the perfect destination for a city trip and to start a longer holiday in Europe.
+      </p>
+      <h3>
+        Dive into the night life
+      </h3>
+      <p>
+        Dutch delights or an Indonesian rice table? Taste the countless cultures of this small world city. See for yourself how every area of Amsterdam is different. From the Jordaan to the Pijp or Amsterdam North, each neighbourhood has 1 thing in common: Great cafés that stay open until the early hours. Just like the concert halls. From classical (Concertgebouw) to rock (Paradiso), Amsterdam has it all!
+      </p>
+      <h3>
+        Flights to Amsterdam and a unique city trip
+      </h3>
+      <p>
+        Find a cheap flight to Amsterdam? With KLM your holiday begins the moment you step onboard. Your journey will fly by with your own entertainment set on intercontinental flights: Free films, games and music. Enjoy our selection of snacks or a tasty dinner and drinks. Add in our many handy extra services (some available for a supplement) and you’ll be in The Netherlands before you know it.
+      </p>
+    
+    </div>
+    <div class="hotspots">
+      <h3>
+        Hotspots in Amsterdam
+      </h3>
+      <div class="grid">
+      <div class="col">
+        <div class="card">
+          <img src="https://cdn.glitch.com/35b836da-8f90-4e13-9292-beddd183f90c%2Fmuseum.jpg?v=1564437528988" style="width:100%">
+        <span class="caption">Riksmuesum</span>
+        </div>
+        
+        </div>
+        <div class="col">
+          <div class="card">
+          <img src="https://cdn.glitch.com/35b836da-8f90-4e13-9292-beddd183f90c%2Fimage1.jpg?v=1564011230553" style="width:100%">
+          <span class="caption">Royale palace</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+  
+</div>   
+
     <footer>
       <ul>
         <li><span> Terms of service</span></li>
