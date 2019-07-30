@@ -56,6 +56,9 @@
         }
         
       }
+      function navigateDirectly2Amsterdam() {
+        document.body.classList.add('amsterdam');
+      }
       
     </script>
   
@@ -232,6 +235,9 @@ table {
 
 .search-widget .input-container:focus-within {
 	border-bottom: 2px solid #00a1de;
+}
+.nav-button {
+  cursor: pointer;
 }
 
 .search-widget input {
@@ -755,7 +761,7 @@ footer ul li:last-child:after {
           Round trip from <span class="currency">BTC 9,99</span>
         </p>
         <div class="more-details">
-          <a href="https://wwws.klm.nl/en/">more details</a>
+          <a class="nav-button" onclick="navigateDirectly2Amsterdam()">more details</a>
         </div>
         <div class="astronaut">
           <amp-img src="https://cdn.glitch.com/35b836da-8f90-4e13-9292-beddd183f90c%2Fspace-guy-flag.png?v=1563955243027" width="304px" height="188px"></amp-img>
