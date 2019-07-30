@@ -88,469 +88,487 @@
     src: url("https://core.static-afkl.com/ams/frontend/font/SF-UI-Text-Regular.woff") format("woff")
 }
       
-    .header {
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-      position: fixed;
-      width: 100%;
-      z-index: 1;
-    }
-      .header .logo-header{
-        background-color: #fff;
-        padding: 6px 16px;
-        margin: 0;
-        text-align: left;
-      }
-      .header .subheader {
-        background-color: #00a1de;
-        padding: 16px 24px;
-        display: none;
-      }
-      .amsterdam .header .subheader {
-        display: flex;
-      }
-      .header .subheader .back-button {
-        width: 100px;
-        padding-left: 28px;
-        display: inline-block;
-        text-decoration: none;
-        color: #fff;
-        font-family: 'Roboto', 'san-serif';
-        font-size: 14px;
-        font-weight: normal;
-        background: url('https://cdn.glitch.com/35b836da-8f90-4e13-9292-beddd183f90c%2Farrow-left.svg?v=1564441556434') no-repeat left center;
-        cursor: pointer;
+.header {
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
 
-      }
-      .header .subheader .title {
-        font-family: 'NoaLight';
-        font-size: 20px;
-        font-weight: 300;
-        line-height: 1.1;
-        color: #ffffff;
-        text-align: center;
-        flex-grow: 1;
-      }
-      .header .subheader .action-buttons {
-        width: 100px;
-      }
+.header .logo-header {
+	background-color: #fff;
+	padding: 6px 16px;
+	margin: 0;
+	text-align: left;
+}
 
-      .menu {
-      float: left;
-    }
+.header .subheader {
+	background-color: #00a1de;
+	padding: 16px 24px;
+	display: none;
+}
 
-      .search {
-      float: right;
-    }
+.amsterdam .header .subheader {
+	display: flex;
+}
 
-      #container {
-      max-width: 500px;
-      padding: 32px 16px 64px 16px;
-      margin: auto;
-    }
+.header .subheader .back-button {
+	width: 50px;
+	padding-left: 28px;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Roboto', 'san-serif';
+	font-size: 14px;
+	font-weight: normal;
+	background: url('https://cdn.glitch.com/35b836da-8f90-4e13-9292-beddd183f90c%2Farrow-left.svg?v=1564441556434') no-repeat left center;
+	cursor: pointer;
+}
 
-    .title {
-      text-align: center;
-    }
-    
-    table {
-      width: 100%;
-    }
+.header .subheader .title {
+	font-family: 'NoaLight';
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.1;
+	color: #ffffff;
+	text-align: center;
+	flex-grow: 1;
+}
 
-      .hidden {
-      display: none;
-    }
+.header .subheader .action-buttons {
+	width: 50px;
+}
 
-      .brandlogo {
-      display: inline-block;
-      width: 64px;
-      height: 40px;
-      
-    }
-    
-    .page-bg-wrap {
-      position: absolute;
-      top: 0;
-      z-index: -1;
-      width: 100%;
-      max-width: none;
-      height: 100%;
-      min-height: 600px;
-      }
+.menu {
+	float: left;
+}
 
-      .page-bg-image {
-        width: 1440px;
-        height: 926px;
-      }
+.search {
+	float: right;
+}
 
-      
-      
-      .search-box  .welcome-text {
-        padding: 16px;
-        background-color: rgba(0,49,69,0.6);
-        font-family: "Roboto", 'san-serif';
-      }
-      
-      .welcome-text h1 {
-        line-height: 1.2em;
-        color: #fff;
-        margin: 0;
-      }
-      
-      .grid, .example-picker {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-      }
-    
-      .grid .align-right {
-        justify-content: flex-end;
-      }
-      .search-widget {
-        background: #fff;
-        padding: 16px;
-        font-family: "Roboto", 'san-serif';
-        
-      }
-      .search-widget .radio-row label {
-        display: inline-block;
-        padding: 8px 32px 8px 0px;
-      }
-      .search-widget .input-container {
-        border-bottom: 1px solid rgba(0,0,0,0.12);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        width: 100%;
-      }
-      
-      .search-widget .input-container:focus-within {
-        border-bottom: 2px solid #00a1de;
-      }
-      .search-widget input {
-        border: none;
-        box-sizing: border-box;
-        padding: .5rem;
-        // border: 1px solid rgba(0,0,0,0.33);
-        font-size: 1rem;
-        line-height: 1.5rem;
-        width: 100%;
-        background-color: inherit;
-      }
-      .search-widget input:focus,
-      .search-widget select:focus {
-        outline: none;
-      }
-      
-      .search-widget input[name="trip-type"] {
-        width: auto;
-      }
+#container {
+	max-width: 500px;
+	padding: 32px 16px 64px 16px;
+	margin: auto;
+}
 
-      .search-widget select {
-        width: 100%;
-        display: block;
-        box-sizing: border-box;
-        border: none;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        height: 37px;
-        background-color: transparent;
-      }
-      
-      .bwc-button {
-        background-color: #e37222;
-        height: 40px;
-        border-radius: 40px;
-        color: #fff;
-        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2), 0px 0px 0px 0px rgba(0,0,0,0.14), 0px 0px 0px 0px rgba(0,0,0,0.12); 
-      }
-      .bwc-button:hover, .bwc-button:active,
-      .bwc-button:focus, .bwc-button:focus:not(:active)
-      {
-        background-color: #e37222;
-        box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2), 0px 8px 10px 1px rgba(0,0,0,0.14), 0px 3px 14px 2px rgba(0,0,0,0.12);
-      }
-      
-      .search-widget .material-icons,
-      .search-widget .svg-icon
-      {
-        margin-right: 8px;
-      }
-      
-      .search-widget  .auto-complete {
-        display: block;
-        flex-grow: 1;
-      }
-      .search-widget .search-btn {
-        margin-left: 42px;
-        width: 100%;
-      }
-      .search-widget .auto-complete-text {
-        width: 100%
-      }
-      .search-widget .CalendarMonth_caption {
-        background-color: #00a1de;
-      }
-      
-      .search-widget .DayPickerKeyboardShortcuts_showSpan,
-      .search-widget .DayPickerKeyboardShortcuts_showSpan:hover,
-      .search-widget .DayPickerKeyboardShortcuts_show:hover .DayPickerKeyboardShortcuts_showSpan { 
-        color: #00a1de 
-      }
-       
-      .search-widget .DayPickerKeyboardShortcuts_show, 
-      .search-widget .DayPickerKeyboardShortcuts_show:hover
-      {
-        color: #00a1de;
-        border-color: #00a1de;
-      }
-  
-      .search-widget .material-icons {
-        color: #00a1de;
-      }
-      
-      #range-date-picker-single {
-        /* display: none; */
-      }
+.title {
+	text-align: center;
+}
 
-      #amsterdam-page-content {
-      padding: 64px 16px;
-      overflow: hidden;
-      display:none;
-      background: url("https://cdn.glitch.com/35b836da-8f90-4e13-9292-beddd183f90c%2Famsterdam-bg.jpg?v=1564011245344") no-repeat top center;
-      background-size: 100% auto;
-      max-width: 1280px;
-      margin: 0 auto;
-  }
-      .amsterdam #amsterdam-page-content {
-        display: block;
-      }
-      
-        .ams-content-container {
-          max-width: 808px;
-          margin: 478px auto 0;
-  }
-      .ams-content-container h3 {
-        color: #00a1de;
-        font-family: "NoaLight", 'san-serif';
-        font-size: 26px;
-        margin: 16px 0 0;
-        line-height: 30px;
-        font-weight: normal;
-      }
-      .head-row {
-        font-family: "NoaLight", 'san-serif';
-        padding: 16px;
-        background-color: rgba(0,49,69,0.6);
-        display: flex;
-        align-items: center;
-        color: #fff;
-        font-size: 36px;
-        font-weight: normal;
-        line-height: 38px;
-      }
-      .head-row h2 {
-        margin: 0;
-        flex-grow: 1;
-        font-size: 36px;
-        font-weight: normal;
-        line-height: 38px;
-      }
-      .ams-content {
-        padding: 16px;
-        background: #fff;
-        border-radius: 0 0 8px 8px;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-      }
-      
-  #home-page-content {
-    padding: 64px 16px;
-    overflow: hidden;
-    display: block;
-    background: url("https://cdn.glitch.com/35b836da-8f90-4e13-9292-beddd183f90c%2Fbg.jpg?v=1563955232870") no-repeat top center;
-    background-size: cover;
-  }
-      .amsterdam #home-page-content {
-        display: none;
-      }
+table {
+	width: 100%;
+}
 
-  .main-content {
-    padding: 64px 16px;
-    overflow: hidden;
-  }
-      .card-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-      }
-      
-      .offer-card {
-        color: #fff;
-        background-color: rgba(119, 107, 107, 0.8);
-        padding: 24px;
-        font-size: 14px;
-        position: relative;
-        margin-right: 80px;
-        margin-top: 190px;
-      }
-      .offer-card .astronaut {
-        position: absolute;
-        top: -165px;
-        right: -20px;
-        transform: translatey(0px);
-	  animation: float 6s ease-in-out infinite;
-      }
-      .offer-card h2{
-        margin: 24px 0;
-        font-size: 24px;
-      }
-      .offer-card .currency {
-        font-size: 20px;
-        font-weight: 400;
-        margin-left: 24px;
-      }
-      .offer-card .more-details {
-        margin-top: 32px;
-        text-align: right;
-      }
-      .offer-card .more-details a {
-        text-decoration: none;
-        color: #fff;
-        text-transform: uppercase;
-      }
+.hidden {
+	display: none;
+}
 
-      @keyframes float {
+.brandlogo {
+	display: inline-block;
+	width: 64px;
+	height: 40px;
+}
+
+.page-bg-wrap {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	width: 100%;
+	max-width: none;
+	height: 100%;
+	min-height: 600px;
+}
+
+.page-bg-image {
+	width: 1440px;
+	height: 926px;
+}
+
+.search-box .welcome-text {
+	padding: 16px;
+	background-color: rgba(0, 49, 69, 0.6);
+	font-family: "Roboto", 'san-serif';
+}
+
+.welcome-text h1 {
+	line-height: 1.2em;
+	color: #fff;
+	margin: 0;
+}
+
+.grid,
+.example-picker {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+.grid .align-right {
+	justify-content: flex-end;
+}
+
+.search-widget {
+	background: #fff;
+	padding: 16px;
+	font-family: "Roboto", 'san-serif';
+}
+
+.search-widget .radio-row label {
+	display: inline-block;
+	padding: 8px 32px 8px 0px;
+}
+
+.search-widget .input-container {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+}
+
+.search-widget .input-container:focus-within {
+	border-bottom: 2px solid #00a1de;
+}
+
+.search-widget input {
+	border: none;
+	box-sizing: border-box;
+	padding: .5rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	width: 100%;
+	background-color: inherit;
+}
+
+.search-widget input:focus,
+.search-widget select:focus {
+	outline: none;
+}
+
+.search-widget input[name="trip-type"] {
+	width: auto;
+}
+
+.search-widget select {
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	border: none;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	height: 37px;
+	background-color: transparent;
+}
+
+.bwc-button {
+	background-color: #e37222;
+	height: 40px;
+	border-radius: 40px;
+	color: #fff;
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+}
+
+.bwc-button:hover,
+.bwc-button:active,
+.bwc-button:focus,
+.bwc-button:focus:not(:active) {
+	background-color: #e37222;
+	box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.search-widget .material-icons,
+.search-widget .svg-icon {
+	margin-right: 8px;
+}
+
+.search-widget .auto-complete {
+	display: block;
+	flex-grow: 1;
+}
+
+.search-widget .search-btn {
+	margin-left: 42px;
+	width: 100%;
+}
+
+.search-widget .auto-complete-text {
+	width: 100%
+}
+
+.search-widget .CalendarMonth_caption {
+	background-color: #00a1de;
+}
+
+.search-widget .DayPickerKeyboardShortcuts_showSpan,
+.search-widget .DayPickerKeyboardShortcuts_showSpan:hover,
+.search-widget .DayPickerKeyboardShortcuts_show:hover .DayPickerKeyboardShortcuts_showSpan {
+	color: #00a1de
+}
+
+.search-widget .DayPickerKeyboardShortcuts_show,
+.search-widget .DayPickerKeyboardShortcuts_show:hover {
+	color: #00a1de;
+	border-color: #00a1de;
+}
+
+.search-widget .material-icons {
+	color: #00a1de;
+}
+
+#amsterdam-page-content {
+	padding: 110px 16px 64px;
+	overflow: hidden;
+	display: none;
+	background: url("https://cdn.glitch.com/35b836da-8f90-4e13-9292-beddd183f90c%2Famsterdam-bg.jpg?v=1564011245344") no-repeat center 110px;
+	background-size: 100% auto;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.amsterdam #amsterdam-page-content {
+	display: block;
+}
+
+.ams-content-container {
+	max-width: 808px;
+	margin: 200px auto 0;
+}
+
+.ams-content-container h3 {
+	color: #00a1de;
+	font-family: "NoaLight", 'san-serif';
+	font-size: 26px;
+	margin: 16px 0 0;
+	line-height: 30px;
+	font-weight: normal;
+}
+
+.head-row {
+	font-family: "NoaLight", 'san-serif';
+	padding: 16px;
+	background-color: rgba(0, 49, 69, 0.6);
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-size: 36px;
+	font-weight: normal;
+	line-height: 38px;
+}
+
+.head-row h2 {
+	margin: 0;
+	flex-grow: 1;
+	font-size: 36px;
+	font-weight: normal;
+	line-height: 38px;
+}
+
+.ams-content {
+	padding: 16px;
+	background: #fff;
+	border-radius: 0 0 8px 8px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+#home-page-content {
+	padding: 64px 16px;
+	overflow: hidden;
+	display: block;
+	background: url("https://cdn.glitch.com/35b836da-8f90-4e13-9292-beddd183f90c%2Fbg.jpg?v=1563955232870") no-repeat top center;
+	background-size: cover;
+}
+
+.amsterdam #home-page-content {
+	display: none;
+}
+
+.main-content {
+	padding: 64px 16px;
+	overflow: hidden;
+}
+
+.card-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.offer-card {
+	color: #fff;
+	background-color: rgba(119, 107, 107, 0.8);
+	padding: 24px;
+	font-size: 14px;
+	position: relative;
+	margin-right: 80px;
+	margin-top: 190px;
+}
+
+.offer-card .astronaut {
+	position: absolute;
+	top: -165px;
+	right: -20px;
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+.offer-card h2 {
+	margin: 24px 0;
+	font-size: 24px;
+}
+
+.offer-card .currency {
+	font-size: 20px;
+	font-weight: 400;
+	margin-left: 24px;
+}
+
+.offer-card .more-details {
+	margin-top: 32px;
+	text-align: right;
+}
+
+.offer-card .more-details a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+@keyframes float {
 	0% {
-		
 		transform: translatey(0px);
 	}
 	50% {
-		
 		transform: translatey(-20px);
 	}
 	100% {
-		
 		transform: translatey(0px);
 	}
 }
-      
-      
-      footer {
-        display:block;
-        background-color: #fff;
-        font-family: "Roboto", san-serif;
-        box-shadow: 0px 0px 4px 4px rgba(255, 255, 255,0.35);
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        z-index:1;
-      }
-      
-      footer ul {
-        display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-      footer ul li {
-        margin:0;
-        padding: 8px;
-        display: flex;
-      }
-      footer ul li a{
-        color: #828180;
-      }
-      
-      footer ul li:after {
-          content: '';
-          border: 1px solid #c2deea;
-        height: 16px;
-        align-self: center;
-        margin-left: 8px;
-      }
-      footer ul li:last-child:after {
-          display: none;
-      }
-      
-      .search-box {
-        
-        width: 100%;
-        box-sizing: border-box;
-        margin: 32px 0 0;
-        border-radius: 2px;
-        padding: 16px;
-      }
-      .grid .col {
-        width: 100%;
-        
-        padding: 8px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        
-      }
-      .hotspots .col  {
-        display: block;
-        justify-content: space-between;
-      }
-      
-      .hotspots .card {
-        padding: 0;
-        border-radius: 3px;
-        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.14);
-        background-color: #ffffff;
-      }
-      
-      .hotspots .col .caption {
-        display: block;
-        font-family: 'Roboto', 'san-serif';
-        color: #003145;
-        text-align: left;
-        font-size: 16px;
-        padding: 8px 16px;
-        font-weight: bold;
-      }
-      
-      
-@media screen and (min-width: 600px) {
-  
-    .search-box {
-      width: 620px;
-        margin-left: 32px;
-    }
-    .grid .col {
-      width: 50%;
-    }
-  
-  
+
+footer {
+	display: block;
+	background-color: #fff;
+	font-family: "Roboto", san-serif;
+	box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.35);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 1;
 }
-      
-      @media screen and (min-width: 600px) {
-        
-      }
-      @media screen and (min-width: 1000px) {
-        .search-box {
-        margin-top: 64px;
-        }
-        .offer-card {
-        margin-top: 0;
-        }
-        
-      }
-      @media screen and (min-width: 1150px) {
-        .search-box {
-        margin-left: 128px;
-        margin-top: 128px;
-      
-    }
-      }
-  
-    
-  
+
+footer ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer ul li {
+	margin: 0;
+	padding: 8px;
+	display: flex;
+}
+
+footer ul li a {
+	color: #828180;
+}
+
+footer ul li:after {
+	content: '';
+	border: 1px solid #c2deea;
+	height: 16px;
+	align-self: center;
+	margin-left: 8px;
+}
+
+footer ul li:last-child:after {
+	display: none;
+}
+
+.search-box {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 32px 0 0;
+	border-radius: 2px;
+	padding: 16px;
+}
+
+.grid .col {
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.hotspots .col {
+	display: block;
+	justify-content: space-between;
+}
+
+.hotspots .card {
+	padding: 0;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.14);
+	background-color: #ffffff;
+}
+
+.hotspots .col .caption {
+	display: block;
+	font-family: 'Roboto', 'san-serif';
+	color: #003145;
+	text-align: left;
+	font-size: 16px;
+	padding: 8px 16px;
+	font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+	.search-box {
+		width: 620px;
+		margin-left: 32px;
+	}
+	.grid .col {
+		width: 50%;
+	}
+	.ams-content-container {
+		margin: 280px auto 0;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.ams-content-container {
+		margin: 350px auto 0;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.search-box {
+		margin-top: 64px;
+	}
+	.offer-card {
+		margin-top: 0;
+	}
+	.ams-content-container {
+		margin: 478px auto 0;
+	}
+}
+
+@media screen and (min-width: 1150px) {
+	.search-box {
+		margin-left: 128px;
+		margin-top: 128px;
+	}
+}
+
+
 }
 
   </style>
